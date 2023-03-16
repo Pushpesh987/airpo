@@ -1,7 +1,7 @@
 import React from "react";
 
-
 const AirportAvailability = () => {
+    
     return (
         <div className="content">
         <div className="container-fluid">
@@ -150,9 +150,6 @@ const AirportAvailability = () => {
             </div>
         </div>
     </div>
-        
-
-
     )
 }
 
