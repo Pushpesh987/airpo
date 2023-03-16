@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import moment from "moment";
 import axios from "axios";
 import AirportSuggetions from "../components/AirportSuggestions";
-//import { useNavigate } from "react-router-dom";
+
 
 const SearchForm = () => {
 
@@ -31,7 +31,7 @@ const SearchForm = () => {
     const getAirport = async () => {
         
         try {
-            const { data, status } = await axios.get('http://43.205.1.85:9009/v1/airports');
+            const { data, status } = await axios.get('https://rl.talentcoco.in/v1/airports');
             if (status === 200 && data) {
                 setAirports(data?.results ?? [])
             } else {
